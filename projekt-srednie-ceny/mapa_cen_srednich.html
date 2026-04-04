@@ -1,0 +1,3213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_93137877a3c40a80838e17c89885c9e3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <style>
+    .leaflet-control-layers-list {
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+        font-size: 12px;}
+    </style>
+    
+            <div class="folium-map" id="map_93137877a3c40a80838e17c89885c9e3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_93137877a3c40a80838e17c89885c9e3 = L.map(
+                "map_93137877a3c40a80838e17c89885c9e3",
+                {
+                    center: [52.0693, 19.4803],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": [
+[
+48.5,
+13.5,
+],
+[
+55.5,
+25.0,
+],
+],
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fa8376d89a7c8d3d8ef5841cc25b387a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fa8376d89a7c8d3d8ef5841cc25b387a.addTo(map_93137877a3c40a80838e17c89885c9e3);
+        
+    
+            var feature_group_fa8571c783129a7dbff0b98f9107f871 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_34c297a28b9ef9abe55b41fc632a5beb = L.marker(
+                [51.1079, 17.0385],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_1c6d6717d863aad6dd6b132292914a46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b3595621038ad3583e93c78413ba626 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6a72cceedabe7a01d01694b4e0727dd = $(`<div id="html_f6a72cceedabe7a01d01694b4e0727dd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo DOLNOŚLĄSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3987.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_1b3595621038ad3583e93c78413ba626.setContent(html_f6a72cceedabe7a01d01694b4e0727dd);
+            
+        
+
+        marker_34c297a28b9ef9abe55b41fc632a5beb.bindPopup(popup_1b3595621038ad3583e93c78413ba626)
+        ;
+
+        
+    
+    
+                marker_34c297a28b9ef9abe55b41fc632a5beb.setIcon(icon_1c6d6717d863aad6dd6b132292914a46);
+            
+    
+            var marker_36b280cc865fc04aaa3259bdfb99b70c = L.marker(
+                [53.1235, 18.0084],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_e2e06f0c4f62c284e5c26bcb01c263bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6a05934e370277548e8d4a7856862fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_365698c78b555c531b90c403fd5bab3e = $(`<div id="html_365698c78b555c531b90c403fd5bab3e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo KUJAWSKO-POMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3272.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_f6a05934e370277548e8d4a7856862fe.setContent(html_365698c78b555c531b90c403fd5bab3e);
+            
+        
+
+        marker_36b280cc865fc04aaa3259bdfb99b70c.bindPopup(popup_f6a05934e370277548e8d4a7856862fe)
+        ;
+
+        
+    
+    
+                marker_36b280cc865fc04aaa3259bdfb99b70c.setIcon(icon_e2e06f0c4f62c284e5c26bcb01c263bd);
+            
+    
+            var marker_984295a4631a6ada17c55b7cedaddc27 = L.marker(
+                [51.2465, 22.5684],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_f0fcff45640f57ba72bb830eed3eee77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09fc0d369c1f29f43e9672659ecb61a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7672e00ca98de3bab08eb5bcc8399cc = $(`<div id="html_b7672e00ca98de3bab08eb5bcc8399cc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo LUBELSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3948.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_09fc0d369c1f29f43e9672659ecb61a2.setContent(html_b7672e00ca98de3bab08eb5bcc8399cc);
+            
+        
+
+        marker_984295a4631a6ada17c55b7cedaddc27.bindPopup(popup_09fc0d369c1f29f43e9672659ecb61a2)
+        ;
+
+        
+    
+    
+                marker_984295a4631a6ada17c55b7cedaddc27.setIcon(icon_f0fcff45640f57ba72bb830eed3eee77);
+            
+    
+            var marker_4a36e3f58c27702f6173673c8abb3d8b = L.marker(
+                [51.9356, 15.5062],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_419b792807a22ab849f51bd7388e1d76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa2cc20cf8a605e529d403932b21a07a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6697dca1a68ea78cbee4dd57cb2cd81b = $(`<div id="html_6697dca1a68ea78cbee4dd57cb2cd81b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo LUBUSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>2579.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_aa2cc20cf8a605e529d403932b21a07a.setContent(html_6697dca1a68ea78cbee4dd57cb2cd81b);
+            
+        
+
+        marker_4a36e3f58c27702f6173673c8abb3d8b.bindPopup(popup_aa2cc20cf8a605e529d403932b21a07a)
+        ;
+
+        
+    
+    
+                marker_4a36e3f58c27702f6173673c8abb3d8b.setIcon(icon_419b792807a22ab849f51bd7388e1d76);
+            
+    
+            var marker_1b33e2e2d7943dbd3d036a667616a2fd = L.marker(
+                [51.7592, 19.456],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_a57378a2bd97fd6b37d77b3c97b884cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1eb170889bd8c8910f3c4433b2ef18f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87920d0606ede4bf9338283e1b9a2560 = $(`<div id="html_87920d0606ede4bf9338283e1b9a2560" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŁÓDZKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3447.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_a1eb170889bd8c8910f3c4433b2ef18f.setContent(html_87920d0606ede4bf9338283e1b9a2560);
+            
+        
+
+        marker_1b33e2e2d7943dbd3d036a667616a2fd.bindPopup(popup_a1eb170889bd8c8910f3c4433b2ef18f)
+        ;
+
+        
+    
+    
+                marker_1b33e2e2d7943dbd3d036a667616a2fd.setIcon(icon_a57378a2bd97fd6b37d77b3c97b884cc);
+            
+    
+            var marker_633ecc4e4f76797a6b55314c1a73fc81 = L.marker(
+                [50.0647, 19.945],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_a588a3d7d513f0cfc9ffa440b328ecb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7848a8748e7dc41ce20ae0af66f0f77c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f356d8f663ca181ba306eb8805a9025d = $(`<div id="html_f356d8f663ca181ba306eb8805a9025d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo MAŁOPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>5699.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_7848a8748e7dc41ce20ae0af66f0f77c.setContent(html_f356d8f663ca181ba306eb8805a9025d);
+            
+        
+
+        marker_633ecc4e4f76797a6b55314c1a73fc81.bindPopup(popup_7848a8748e7dc41ce20ae0af66f0f77c)
+        ;
+
+        
+    
+    
+                marker_633ecc4e4f76797a6b55314c1a73fc81.setIcon(icon_a588a3d7d513f0cfc9ffa440b328ecb3);
+            
+    
+            var marker_dd7b8ccc8b3ece5428df235dab410cc5 = L.marker(
+                [52.2297, 21.0122],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_c295ba99b015c6d5fbb4eace16009bf4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8edaba4f7c9d2689e4523d2ae4e58645 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53ffc48ad60f41ea13a4dbc2395c71f5 = $(`<div id="html_53ffc48ad60f41ea13a4dbc2395c71f5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo MAZOWIECKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>6582.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_8edaba4f7c9d2689e4523d2ae4e58645.setContent(html_53ffc48ad60f41ea13a4dbc2395c71f5);
+            
+        
+
+        marker_dd7b8ccc8b3ece5428df235dab410cc5.bindPopup(popup_8edaba4f7c9d2689e4523d2ae4e58645)
+        ;
+
+        
+    
+    
+                marker_dd7b8ccc8b3ece5428df235dab410cc5.setIcon(icon_c295ba99b015c6d5fbb4eace16009bf4);
+            
+    
+            var marker_276d55ce1c454843f4e6686d696f923f = L.marker(
+                [50.6711, 17.9253],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_99adf21bf97218f49d837ab9fadf49ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ca2be6d2ff2ef1435e60b115f2381d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79d6b74b4d976c4310c6f2396c00f964 = $(`<div id="html_79d6b74b4d976c4310c6f2396c00f964" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo OPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>2831.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_9ca2be6d2ff2ef1435e60b115f2381d6.setContent(html_79d6b74b4d976c4310c6f2396c00f964);
+            
+        
+
+        marker_276d55ce1c454843f4e6686d696f923f.bindPopup(popup_9ca2be6d2ff2ef1435e60b115f2381d6)
+        ;
+
+        
+    
+    
+                marker_276d55ce1c454843f4e6686d696f923f.setIcon(icon_99adf21bf97218f49d837ab9fadf49ab);
+            
+    
+            var marker_c58c9540bf26ab5836cec5be74832e6c = L.marker(
+                [50.0413, 21.999],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_2a90218e9fdb86bc88042456a6adafac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8fd08f4ecc375f3ca12dba6499a46bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b682a8da12561664039364a3d339043 = $(`<div id="html_4b682a8da12561664039364a3d339043" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo PODKARPACKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3371.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_a8fd08f4ecc375f3ca12dba6499a46bd.setContent(html_4b682a8da12561664039364a3d339043);
+            
+        
+
+        marker_c58c9540bf26ab5836cec5be74832e6c.bindPopup(popup_a8fd08f4ecc375f3ca12dba6499a46bd)
+        ;
+
+        
+    
+    
+                marker_c58c9540bf26ab5836cec5be74832e6c.setIcon(icon_2a90218e9fdb86bc88042456a6adafac);
+            
+    
+            var marker_1ab978bb8cc5fe0a88cfbc51683a1716 = L.marker(
+                [53.1325, 23.1688],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_eee68acede81d7c1c8c8ebdeb31ddaeb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17f1137d1466ad5a2cfd44e785e48966 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5c2c272c5c35daef8da05e87a3aaa98 = $(`<div id="html_c5c2c272c5c35daef8da05e87a3aaa98" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo PODLASKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3921.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_17f1137d1466ad5a2cfd44e785e48966.setContent(html_c5c2c272c5c35daef8da05e87a3aaa98);
+            
+        
+
+        marker_1ab978bb8cc5fe0a88cfbc51683a1716.bindPopup(popup_17f1137d1466ad5a2cfd44e785e48966)
+        ;
+
+        
+    
+    
+                marker_1ab978bb8cc5fe0a88cfbc51683a1716.setIcon(icon_eee68acede81d7c1c8c8ebdeb31ddaeb);
+            
+    
+            var marker_644a9c5999129f14c9fe597ce924e484 = L.marker(
+                [54.352, 18.6466],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_898f389eaa04972ea59b483a605bb82b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff6b5f58e18afc9ca602968c24b6425e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8347aa99c1ab8f68479ba6b2750e7c12 = $(`<div id="html_8347aa99c1ab8f68479ba6b2750e7c12" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo POMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>5007.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_ff6b5f58e18afc9ca602968c24b6425e.setContent(html_8347aa99c1ab8f68479ba6b2750e7c12);
+            
+        
+
+        marker_644a9c5999129f14c9fe597ce924e484.bindPopup(popup_ff6b5f58e18afc9ca602968c24b6425e)
+        ;
+
+        
+    
+    
+                marker_644a9c5999129f14c9fe597ce924e484.setIcon(icon_898f389eaa04972ea59b483a605bb82b);
+            
+    
+            var marker_b56afdcb97aae253f83e480339b2dfa3 = L.marker(
+                [50.2649, 19.0238],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_b7ad62813a68c554ce307dfc1801daca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85a5bb3bdf222d16ac4ae7a502996fcc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d9d135eb6e6192991572a8ccbae4260 = $(`<div id="html_1d9d135eb6e6192991572a8ccbae4260" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŚLĄSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>2751.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_85a5bb3bdf222d16ac4ae7a502996fcc.setContent(html_1d9d135eb6e6192991572a8ccbae4260);
+            
+        
+
+        marker_b56afdcb97aae253f83e480339b2dfa3.bindPopup(popup_85a5bb3bdf222d16ac4ae7a502996fcc)
+        ;
+
+        
+    
+    
+                marker_b56afdcb97aae253f83e480339b2dfa3.setIcon(icon_b7ad62813a68c554ce307dfc1801daca);
+            
+    
+            var marker_8379c046675679047b25b19d093be8cc = L.marker(
+                [50.8661, 20.6286],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_7aafbd1a4743d31621e414cfd7fc7156 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03f9bae651a053c21b49ab575848773c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb6f772ab5e2c4d1a38f5cf8e71b97ba = $(`<div id="html_fb6f772ab5e2c4d1a38f5cf8e71b97ba" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŚWIĘTOKRZYSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3757.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_03f9bae651a053c21b49ab575848773c.setContent(html_fb6f772ab5e2c4d1a38f5cf8e71b97ba);
+            
+        
+
+        marker_8379c046675679047b25b19d093be8cc.bindPopup(popup_03f9bae651a053c21b49ab575848773c)
+        ;
+
+        
+    
+    
+                marker_8379c046675679047b25b19d093be8cc.setIcon(icon_7aafbd1a4743d31621e414cfd7fc7156);
+            
+    
+            var marker_3be2b7a1dd8bfcd512a7925ef341daba = L.marker(
+                [53.7799, 20.4942],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_8c84881ed56f49fdc93dba91ca0f7371 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f4949cc5e84054090a7bf4f81102849 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6af987309c66584c67d29567210968fd = $(`<div id="html_6af987309c66584c67d29567210968fd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo WARMIŃSKO-MAZURSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3215.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_0f4949cc5e84054090a7bf4f81102849.setContent(html_6af987309c66584c67d29567210968fd);
+            
+        
+
+        marker_3be2b7a1dd8bfcd512a7925ef341daba.bindPopup(popup_0f4949cc5e84054090a7bf4f81102849)
+        ;
+
+        
+    
+    
+                marker_3be2b7a1dd8bfcd512a7925ef341daba.setIcon(icon_8c84881ed56f49fdc93dba91ca0f7371);
+            
+    
+            var marker_d82e62af965ee33771a87c6cefd7a418 = L.marker(
+                [52.4064, 16.9252],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_962a02b798965bb3d669ed1fc359d5e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac5ed613fbe2bc685da94960bb0bce3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1afe542fd8c49953fe660a4813d92291 = $(`<div id="html_1afe542fd8c49953fe660a4813d92291" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo WIELKOPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4138.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_ac5ed613fbe2bc685da94960bb0bce3f.setContent(html_1afe542fd8c49953fe660a4813d92291);
+            
+        
+
+        marker_d82e62af965ee33771a87c6cefd7a418.bindPopup(popup_ac5ed613fbe2bc685da94960bb0bce3f)
+        ;
+
+        
+    
+    
+                marker_d82e62af965ee33771a87c6cefd7a418.setIcon(icon_962a02b798965bb3d669ed1fc359d5e8);
+            
+    
+            var marker_421cce573b6aa3c7d8bd742f420fa3b9 = L.marker(
+                [53.4285, 14.5528],
+                {
+}
+            ).addTo(feature_group_fa8571c783129a7dbff0b98f9107f871);
+        
+    
+            var icon_0cc104d5bbf188e5ac674c4a5412b0c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74135ba25998c40540d353e0295793d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58a94c49232be8bfd320ba9290197b23 = $(`<div id="html_58a94c49232be8bfd320ba9290197b23" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ZACHODNIOPOMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3671.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_74135ba25998c40540d353e0295793d2.setContent(html_58a94c49232be8bfd320ba9290197b23);
+            
+        
+
+        marker_421cce573b6aa3c7d8bd742f420fa3b9.bindPopup(popup_74135ba25998c40540d353e0295793d2)
+        ;
+
+        
+    
+    
+                marker_421cce573b6aa3c7d8bd742f420fa3b9.setIcon(icon_0cc104d5bbf188e5ac674c4a5412b0c2);
+            
+    
+            var feature_group_ffc09b071fcb52f1587adbc9c23da160 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_afea38318231d20c9db9614489e3369b = L.marker(
+                [51.1079, 17.0385],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_94d70a851295713f58e61195560e4987 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f92213c913402fc35eecdfd2cfc2442f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e50a1b4716c259b6b96649318d2ef933 = $(`<div id="html_e50a1b4716c259b6b96649318d2ef933" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo DOLNOŚLĄSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4136.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_f92213c913402fc35eecdfd2cfc2442f.setContent(html_e50a1b4716c259b6b96649318d2ef933);
+            
+        
+
+        marker_afea38318231d20c9db9614489e3369b.bindPopup(popup_f92213c913402fc35eecdfd2cfc2442f)
+        ;
+
+        
+    
+    
+                marker_afea38318231d20c9db9614489e3369b.setIcon(icon_94d70a851295713f58e61195560e4987);
+            
+    
+            var marker_f347ec667b54f9ecdaaf4441dc1bfa84 = L.marker(
+                [53.1235, 18.0084],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_90b6831cb468a61d1793fca86cbee785 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c70e9d0d068127ad6bc72248bbdd1343 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_68c783a62a9aaf9d3250a83caef2dba6 = $(`<div id="html_68c783a62a9aaf9d3250a83caef2dba6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo KUJAWSKO-POMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3217.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_c70e9d0d068127ad6bc72248bbdd1343.setContent(html_68c783a62a9aaf9d3250a83caef2dba6);
+            
+        
+
+        marker_f347ec667b54f9ecdaaf4441dc1bfa84.bindPopup(popup_c70e9d0d068127ad6bc72248bbdd1343)
+        ;
+
+        
+    
+    
+                marker_f347ec667b54f9ecdaaf4441dc1bfa84.setIcon(icon_90b6831cb468a61d1793fca86cbee785);
+            
+    
+            var marker_58f6e26f6252acc8fe174a7fc8e62fe9 = L.marker(
+                [51.2465, 22.5684],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_348ffd786b7014a9d6d025bdc9fae056 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b9f0592f87576638acd11c3043707ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b06fa75c9a2c1c1f4026f8efb16ee87 = $(`<div id="html_9b06fa75c9a2c1c1f4026f8efb16ee87" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo LUBELSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3975.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_8b9f0592f87576638acd11c3043707ef.setContent(html_9b06fa75c9a2c1c1f4026f8efb16ee87);
+            
+        
+
+        marker_58f6e26f6252acc8fe174a7fc8e62fe9.bindPopup(popup_8b9f0592f87576638acd11c3043707ef)
+        ;
+
+        
+    
+    
+                marker_58f6e26f6252acc8fe174a7fc8e62fe9.setIcon(icon_348ffd786b7014a9d6d025bdc9fae056);
+            
+    
+            var marker_dd6870d96770dd56c2a146f48b3bb834 = L.marker(
+                [51.9356, 15.5062],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_ead57c827bdba379e9e79488e70cd14e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e4c9f9ef07e55fc01249a54dc0e6a62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d6dd588b1c7506e07bff56904d660a6 = $(`<div id="html_7d6dd588b1c7506e07bff56904d660a6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo LUBUSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>2603.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_1e4c9f9ef07e55fc01249a54dc0e6a62.setContent(html_7d6dd588b1c7506e07bff56904d660a6);
+            
+        
+
+        marker_dd6870d96770dd56c2a146f48b3bb834.bindPopup(popup_1e4c9f9ef07e55fc01249a54dc0e6a62)
+        ;
+
+        
+    
+    
+                marker_dd6870d96770dd56c2a146f48b3bb834.setIcon(icon_ead57c827bdba379e9e79488e70cd14e);
+            
+    
+            var marker_1245b71a4ade204e1bfa35a04eac6794 = L.marker(
+                [51.7592, 19.456],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_7fa96c8d63c2784d60da26e7f18d0e52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21479a0a676f0d6be1b52ea19942bcd3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d09911fa2074fb5f873238b95cac60c = $(`<div id="html_0d09911fa2074fb5f873238b95cac60c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŁÓDZKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3422.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_21479a0a676f0d6be1b52ea19942bcd3.setContent(html_0d09911fa2074fb5f873238b95cac60c);
+            
+        
+
+        marker_1245b71a4ade204e1bfa35a04eac6794.bindPopup(popup_21479a0a676f0d6be1b52ea19942bcd3)
+        ;
+
+        
+    
+    
+                marker_1245b71a4ade204e1bfa35a04eac6794.setIcon(icon_7fa96c8d63c2784d60da26e7f18d0e52);
+            
+    
+            var marker_b3a0a5c0a81d923572187bb2287c892a = L.marker(
+                [50.0647, 19.945],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_2a43027da0f10ec4b9741a1f69a62fb8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d87a8282575d3a61498bd356c3fe3529 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d990e3b4d1f8e28ce84fddf10e721b1c = $(`<div id="html_d990e3b4d1f8e28ce84fddf10e721b1c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo MAŁOPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>5893.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_d87a8282575d3a61498bd356c3fe3529.setContent(html_d990e3b4d1f8e28ce84fddf10e721b1c);
+            
+        
+
+        marker_b3a0a5c0a81d923572187bb2287c892a.bindPopup(popup_d87a8282575d3a61498bd356c3fe3529)
+        ;
+
+        
+    
+    
+                marker_b3a0a5c0a81d923572187bb2287c892a.setIcon(icon_2a43027da0f10ec4b9741a1f69a62fb8);
+            
+    
+            var marker_881d88ef0b4982a1f277aadb7b4a34d9 = L.marker(
+                [52.2297, 21.0122],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_9304a193537d215a419ed85645b8fcb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c52c089cf8a9a903731908611c700d5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_186ef2cc4969ede3b34ae4181e7ce474 = $(`<div id="html_186ef2cc4969ede3b34ae4181e7ce474" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo MAZOWIECKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>6654.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_c52c089cf8a9a903731908611c700d5a.setContent(html_186ef2cc4969ede3b34ae4181e7ce474);
+            
+        
+
+        marker_881d88ef0b4982a1f277aadb7b4a34d9.bindPopup(popup_c52c089cf8a9a903731908611c700d5a)
+        ;
+
+        
+    
+    
+                marker_881d88ef0b4982a1f277aadb7b4a34d9.setIcon(icon_9304a193537d215a419ed85645b8fcb0);
+            
+    
+            var marker_81e86829807abf28f093e8ea2979661b = L.marker(
+                [50.6711, 17.9253],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_33a805e6c018b76e6b025611f3051381 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe1849a3147bc661bf9d5dd419cd3b6e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2278c072742e03ffd981e59f14fba8b9 = $(`<div id="html_2278c072742e03ffd981e59f14fba8b9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo OPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>2768.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_fe1849a3147bc661bf9d5dd419cd3b6e.setContent(html_2278c072742e03ffd981e59f14fba8b9);
+            
+        
+
+        marker_81e86829807abf28f093e8ea2979661b.bindPopup(popup_fe1849a3147bc661bf9d5dd419cd3b6e)
+        ;
+
+        
+    
+    
+                marker_81e86829807abf28f093e8ea2979661b.setIcon(icon_33a805e6c018b76e6b025611f3051381);
+            
+    
+            var marker_8abe6819f90014d8ae741d444f8b33e8 = L.marker(
+                [50.0413, 21.999],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_6d77ae309741c3d06e83c3ae7567ecce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76521de133dc2eb0425900efd7650a42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbdbc4cb7036ce999d272e7f475f501a = $(`<div id="html_bbdbc4cb7036ce999d272e7f475f501a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo PODKARPACKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3661.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_76521de133dc2eb0425900efd7650a42.setContent(html_bbdbc4cb7036ce999d272e7f475f501a);
+            
+        
+
+        marker_8abe6819f90014d8ae741d444f8b33e8.bindPopup(popup_76521de133dc2eb0425900efd7650a42)
+        ;
+
+        
+    
+    
+                marker_8abe6819f90014d8ae741d444f8b33e8.setIcon(icon_6d77ae309741c3d06e83c3ae7567ecce);
+            
+    
+            var marker_cda57552be01bae5b09de55c1c284263 = L.marker(
+                [53.1325, 23.1688],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_88c051ac7d85b7199bacf8a1c7cd2edf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f5cec84ed511aee4e93874341059d57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0e765763ceb3907d26ad44f05a7194d = $(`<div id="html_c0e765763ceb3907d26ad44f05a7194d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo PODLASKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3920.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_4f5cec84ed511aee4e93874341059d57.setContent(html_c0e765763ceb3907d26ad44f05a7194d);
+            
+        
+
+        marker_cda57552be01bae5b09de55c1c284263.bindPopup(popup_4f5cec84ed511aee4e93874341059d57)
+        ;
+
+        
+    
+    
+                marker_cda57552be01bae5b09de55c1c284263.setIcon(icon_88c051ac7d85b7199bacf8a1c7cd2edf);
+            
+    
+            var marker_f5ac36b27ef6600582832491dfdb189b = L.marker(
+                [54.352, 18.6466],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_23bfe4d93c9d9f94c58661111ff68648 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c31e9d6dcb2648b753c19dae69f76b21 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c74474b0ec234d2ce5bfac33d36f65bb = $(`<div id="html_c74474b0ec234d2ce5bfac33d36f65bb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo POMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4862.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_c31e9d6dcb2648b753c19dae69f76b21.setContent(html_c74474b0ec234d2ce5bfac33d36f65bb);
+            
+        
+
+        marker_f5ac36b27ef6600582832491dfdb189b.bindPopup(popup_c31e9d6dcb2648b753c19dae69f76b21)
+        ;
+
+        
+    
+    
+                marker_f5ac36b27ef6600582832491dfdb189b.setIcon(icon_23bfe4d93c9d9f94c58661111ff68648);
+            
+    
+            var marker_50cf4422c37a4d1605f582286ae71923 = L.marker(
+                [50.2649, 19.0238],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_d1b0f28573958ef863d0e9175b4c1cc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6023fc9185048de0c312690d3a45e13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1da705749394e2d9d2bbfb7ea14c03d5 = $(`<div id="html_1da705749394e2d9d2bbfb7ea14c03d5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŚLĄSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>2736.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_e6023fc9185048de0c312690d3a45e13.setContent(html_1da705749394e2d9d2bbfb7ea14c03d5);
+            
+        
+
+        marker_50cf4422c37a4d1605f582286ae71923.bindPopup(popup_e6023fc9185048de0c312690d3a45e13)
+        ;
+
+        
+    
+    
+                marker_50cf4422c37a4d1605f582286ae71923.setIcon(icon_d1b0f28573958ef863d0e9175b4c1cc0);
+            
+    
+            var marker_788bc861b49e989c531c5ad4f1557ccf = L.marker(
+                [50.8661, 20.6286],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_7623c1278ec368a5e1a993590ebc9888 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a337d6a0d38662931d68bbab7fd044d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65fa7665a24614d4eb1681a75c5dbfa4 = $(`<div id="html_65fa7665a24614d4eb1681a75c5dbfa4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŚWIĘTOKRZYSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3574.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_a337d6a0d38662931d68bbab7fd044d6.setContent(html_65fa7665a24614d4eb1681a75c5dbfa4);
+            
+        
+
+        marker_788bc861b49e989c531c5ad4f1557ccf.bindPopup(popup_a337d6a0d38662931d68bbab7fd044d6)
+        ;
+
+        
+    
+    
+                marker_788bc861b49e989c531c5ad4f1557ccf.setIcon(icon_7623c1278ec368a5e1a993590ebc9888);
+            
+    
+            var marker_cab0b1a51e6e9fc93543978c54994557 = L.marker(
+                [53.7799, 20.4942],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_17e0b73d6aef447e944acbcd3465fb9e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf17eff88a5d8447d8678671c835e052 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e01216efda9382eb45a3662ff46bac2d = $(`<div id="html_e01216efda9382eb45a3662ff46bac2d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo WARMIŃSKO-MAZURSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3181.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_bf17eff88a5d8447d8678671c835e052.setContent(html_e01216efda9382eb45a3662ff46bac2d);
+            
+        
+
+        marker_cab0b1a51e6e9fc93543978c54994557.bindPopup(popup_bf17eff88a5d8447d8678671c835e052)
+        ;
+
+        
+    
+    
+                marker_cab0b1a51e6e9fc93543978c54994557.setIcon(icon_17e0b73d6aef447e944acbcd3465fb9e);
+            
+    
+            var marker_22aa5769352bc0295689f3d86d7535dc = L.marker(
+                [52.4064, 16.9252],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_743050ab53b6d388ba183276b0578f74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6947fb8a10b3cf915b62e36869f7134 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a306e93db2bfd623d541c5d71cd7338f = $(`<div id="html_a306e93db2bfd623d541c5d71cd7338f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo WIELKOPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4208.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_f6947fb8a10b3cf915b62e36869f7134.setContent(html_a306e93db2bfd623d541c5d71cd7338f);
+            
+        
+
+        marker_22aa5769352bc0295689f3d86d7535dc.bindPopup(popup_f6947fb8a10b3cf915b62e36869f7134)
+        ;
+
+        
+    
+    
+                marker_22aa5769352bc0295689f3d86d7535dc.setIcon(icon_743050ab53b6d388ba183276b0578f74);
+            
+    
+            var marker_083b52ddc663eefa941657c3f91902e8 = L.marker(
+                [53.4285, 14.5528],
+                {
+}
+            ).addTo(feature_group_ffc09b071fcb52f1587adbc9c23da160);
+        
+    
+            var icon_37671d5d4999816d7e89493767aff894 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6e2ae9df7cf5b25021b9b02fb369751 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cff9d8f2dcf1590bc7f01c8bb8dc53bf = $(`<div id="html_cff9d8f2dcf1590bc7f01c8bb8dc53bf" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ZACHODNIOPOMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3493.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_e6e2ae9df7cf5b25021b9b02fb369751.setContent(html_cff9d8f2dcf1590bc7f01c8bb8dc53bf);
+            
+        
+
+        marker_083b52ddc663eefa941657c3f91902e8.bindPopup(popup_e6e2ae9df7cf5b25021b9b02fb369751)
+        ;
+
+        
+    
+    
+                marker_083b52ddc663eefa941657c3f91902e8.setIcon(icon_37671d5d4999816d7e89493767aff894);
+            
+    
+            var feature_group_a2b8c5c773a2dad45f274b6a1693a11c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_dd391bde7421ae0e83d8e714901f8682 = L.marker(
+                [51.1079, 17.0385],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_c5dfd263b499af5e511ba32914a42302 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_558f996758d5a919d1e1c013de766dfd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d4746941295ea3d9495382fe62f5b2e = $(`<div id="html_6d4746941295ea3d9495382fe62f5b2e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo DOLNOŚLĄSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4461.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_558f996758d5a919d1e1c013de766dfd.setContent(html_6d4746941295ea3d9495382fe62f5b2e);
+            
+        
+
+        marker_dd391bde7421ae0e83d8e714901f8682.bindPopup(popup_558f996758d5a919d1e1c013de766dfd)
+        ;
+
+        
+    
+    
+                marker_dd391bde7421ae0e83d8e714901f8682.setIcon(icon_c5dfd263b499af5e511ba32914a42302);
+            
+    
+            var marker_2981ab9b11e38e7721f292e86d2bc3d1 = L.marker(
+                [53.1235, 18.0084],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_d7f5c7687b4baebe41eba378285240fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d50bd2f50aa14e1f017a3e6040ed6638 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb8e60045d0cc55129dabe58d2a6f24a = $(`<div id="html_bb8e60045d0cc55129dabe58d2a6f24a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo KUJAWSKO-POMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3866.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_d50bd2f50aa14e1f017a3e6040ed6638.setContent(html_bb8e60045d0cc55129dabe58d2a6f24a);
+            
+        
+
+        marker_2981ab9b11e38e7721f292e86d2bc3d1.bindPopup(popup_d50bd2f50aa14e1f017a3e6040ed6638)
+        ;
+
+        
+    
+    
+                marker_2981ab9b11e38e7721f292e86d2bc3d1.setIcon(icon_d7f5c7687b4baebe41eba378285240fb);
+            
+    
+            var marker_e49d042bdb7eae73d5829b0216fdf7ad = L.marker(
+                [51.2465, 22.5684],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_a2982c18e22e5af91664701dc58a400e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d5957c44453e66688e2558549da94504 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e64821579a1af6f70f3592a9ab66dbd1 = $(`<div id="html_e64821579a1af6f70f3592a9ab66dbd1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo LUBELSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4562.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_d5957c44453e66688e2558549da94504.setContent(html_e64821579a1af6f70f3592a9ab66dbd1);
+            
+        
+
+        marker_e49d042bdb7eae73d5829b0216fdf7ad.bindPopup(popup_d5957c44453e66688e2558549da94504)
+        ;
+
+        
+    
+    
+                marker_e49d042bdb7eae73d5829b0216fdf7ad.setIcon(icon_a2982c18e22e5af91664701dc58a400e);
+            
+    
+            var marker_505500e050d13c6397be837dbf941ffc = L.marker(
+                [51.9356, 15.5062],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_ce69161fe59d4045b0ae9c78c33fabf6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2cff4132d8d669bd40227e1b01a10708 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_695f8222b4b8eb9fa24fdfff444b9e96 = $(`<div id="html_695f8222b4b8eb9fa24fdfff444b9e96" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo LUBUSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3141.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_2cff4132d8d669bd40227e1b01a10708.setContent(html_695f8222b4b8eb9fa24fdfff444b9e96);
+            
+        
+
+        marker_505500e050d13c6397be837dbf941ffc.bindPopup(popup_2cff4132d8d669bd40227e1b01a10708)
+        ;
+
+        
+    
+    
+                marker_505500e050d13c6397be837dbf941ffc.setIcon(icon_ce69161fe59d4045b0ae9c78c33fabf6);
+            
+    
+            var marker_b6f8c97c1474a9cf6c5f7933eda4cfed = L.marker(
+                [51.7592, 19.456],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_13aab773bc41f27d6e64e3cefd6e42e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_487e60260ab1c5fd2fb4f49d26c66b8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4d845257168920c6bdcb240a1160d20 = $(`<div id="html_e4d845257168920c6bdcb240a1160d20" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŁÓDZKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4046.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_487e60260ab1c5fd2fb4f49d26c66b8e.setContent(html_e4d845257168920c6bdcb240a1160d20);
+            
+        
+
+        marker_b6f8c97c1474a9cf6c5f7933eda4cfed.bindPopup(popup_487e60260ab1c5fd2fb4f49d26c66b8e)
+        ;
+
+        
+    
+    
+                marker_b6f8c97c1474a9cf6c5f7933eda4cfed.setIcon(icon_13aab773bc41f27d6e64e3cefd6e42e2);
+            
+    
+            var marker_7b8831d53383cf46912f8b3425272f28 = L.marker(
+                [50.0647, 19.945],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_36b789b547707bdd6b8b7cb69d6e26be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd0a2354ca2543f571e039b64e3c9aa6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3063528e326c04594f12e56364773cca = $(`<div id="html_3063528e326c04594f12e56364773cca" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo MAŁOPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>6000.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_bd0a2354ca2543f571e039b64e3c9aa6.setContent(html_3063528e326c04594f12e56364773cca);
+            
+        
+
+        marker_7b8831d53383cf46912f8b3425272f28.bindPopup(popup_bd0a2354ca2543f571e039b64e3c9aa6)
+        ;
+
+        
+    
+    
+                marker_7b8831d53383cf46912f8b3425272f28.setIcon(icon_36b789b547707bdd6b8b7cb69d6e26be);
+            
+    
+            var marker_486cd1dd738f64c6475fb25f946ecfa5 = L.marker(
+                [52.2297, 21.0122],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_02a7977b080e45bc4718c703d0d98bad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9109ae6b24a2bc9a5d5f9b5c781d3a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce3618618c80c7454a052c3ee5cf1ea0 = $(`<div id="html_ce3618618c80c7454a052c3ee5cf1ea0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo MAZOWIECKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>7250.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_f9109ae6b24a2bc9a5d5f9b5c781d3a0.setContent(html_ce3618618c80c7454a052c3ee5cf1ea0);
+            
+        
+
+        marker_486cd1dd738f64c6475fb25f946ecfa5.bindPopup(popup_f9109ae6b24a2bc9a5d5f9b5c781d3a0)
+        ;
+
+        
+    
+    
+                marker_486cd1dd738f64c6475fb25f946ecfa5.setIcon(icon_02a7977b080e45bc4718c703d0d98bad);
+            
+    
+            var marker_5205bcf1f53fe81960e35b13cfc7079d = L.marker(
+                [50.6711, 17.9253],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_3510d89c1e1b1c38f2cc75f7d7d13a69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6fd4b5b435ad7356bbac37cb9b9318a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f343ab823cff684adf9d6661db90d41 = $(`<div id="html_5f343ab823cff684adf9d6661db90d41" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo OPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3118.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_e6fd4b5b435ad7356bbac37cb9b9318a.setContent(html_5f343ab823cff684adf9d6661db90d41);
+            
+        
+
+        marker_5205bcf1f53fe81960e35b13cfc7079d.bindPopup(popup_e6fd4b5b435ad7356bbac37cb9b9318a)
+        ;
+
+        
+    
+    
+                marker_5205bcf1f53fe81960e35b13cfc7079d.setIcon(icon_3510d89c1e1b1c38f2cc75f7d7d13a69);
+            
+    
+            var marker_d8cb37609733c5f654c6e4cad0c3908e = L.marker(
+                [50.0413, 21.999],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_5290998e6b7bddd5c5f9f0fa6934ccf4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a5e4d0bb15c091b298a5c1fafb6151c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a21514b07e3478cd61b1f2d65d5c601b = $(`<div id="html_a21514b07e3478cd61b1f2d65d5c601b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo PODKARPACKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3942.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_9a5e4d0bb15c091b298a5c1fafb6151c.setContent(html_a21514b07e3478cd61b1f2d65d5c601b);
+            
+        
+
+        marker_d8cb37609733c5f654c6e4cad0c3908e.bindPopup(popup_9a5e4d0bb15c091b298a5c1fafb6151c)
+        ;
+
+        
+    
+    
+                marker_d8cb37609733c5f654c6e4cad0c3908e.setIcon(icon_5290998e6b7bddd5c5f9f0fa6934ccf4);
+            
+    
+            var marker_b25c970709d237f095f9a67b6367be30 = L.marker(
+                [53.1325, 23.1688],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_133ca826679720c35bc77825bca2cc75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c504104a6fb44fdc550c7570bd9ba16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_154773a9c82573f4298a521e50199882 = $(`<div id="html_154773a9c82573f4298a521e50199882" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo PODLASKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4193.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_9c504104a6fb44fdc550c7570bd9ba16.setContent(html_154773a9c82573f4298a521e50199882);
+            
+        
+
+        marker_b25c970709d237f095f9a67b6367be30.bindPopup(popup_9c504104a6fb44fdc550c7570bd9ba16)
+        ;
+
+        
+    
+    
+                marker_b25c970709d237f095f9a67b6367be30.setIcon(icon_133ca826679720c35bc77825bca2cc75);
+            
+    
+            var marker_68393fc7710fa6f6e772f051dce072db = L.marker(
+                [54.352, 18.6466],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_351c35e242a6eda4eef7eb1582634b74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee23c86aa2fc9f84d08b677164bfb7f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df7fff2bd06fa3b7a3e241528446db48 = $(`<div id="html_df7fff2bd06fa3b7a3e241528446db48" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo POMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>5698.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_ee23c86aa2fc9f84d08b677164bfb7f1.setContent(html_df7fff2bd06fa3b7a3e241528446db48);
+            
+        
+
+        marker_68393fc7710fa6f6e772f051dce072db.bindPopup(popup_ee23c86aa2fc9f84d08b677164bfb7f1)
+        ;
+
+        
+    
+    
+                marker_68393fc7710fa6f6e772f051dce072db.setIcon(icon_351c35e242a6eda4eef7eb1582634b74);
+            
+    
+            var marker_00ec17327ad4cf024c1e20c5b090aaf3 = L.marker(
+                [50.2649, 19.0238],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_81d41ff6a4501dfc58401e33871d0c78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b059491e15364712adf1c83fef594e79 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_064bb3c788845fe1266f8e27c0e1d653 = $(`<div id="html_064bb3c788845fe1266f8e27c0e1d653" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŚLĄSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3096.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_b059491e15364712adf1c83fef594e79.setContent(html_064bb3c788845fe1266f8e27c0e1d653);
+            
+        
+
+        marker_00ec17327ad4cf024c1e20c5b090aaf3.bindPopup(popup_b059491e15364712adf1c83fef594e79)
+        ;
+
+        
+    
+    
+                marker_00ec17327ad4cf024c1e20c5b090aaf3.setIcon(icon_81d41ff6a4501dfc58401e33871d0c78);
+            
+    
+            var marker_07fd4584d6511c71a9549a077e037eb0 = L.marker(
+                [50.8661, 20.6286],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_275c7822b3e94fc14c90d2f2a1072005 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe9802a27e9928702a5cc4826af22d93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41b60e93b1fc602b4c6354a9d8f099b2 = $(`<div id="html_41b60e93b1fc602b4c6354a9d8f099b2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŚWIĘTOKRZYSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3775.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_fe9802a27e9928702a5cc4826af22d93.setContent(html_41b60e93b1fc602b4c6354a9d8f099b2);
+            
+        
+
+        marker_07fd4584d6511c71a9549a077e037eb0.bindPopup(popup_fe9802a27e9928702a5cc4826af22d93)
+        ;
+
+        
+    
+    
+                marker_07fd4584d6511c71a9549a077e037eb0.setIcon(icon_275c7822b3e94fc14c90d2f2a1072005);
+            
+    
+            var marker_503f9bcaad4f27ef35f2dd5f52d966a8 = L.marker(
+                [53.7799, 20.4942],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_caa2cb26b5415513efd18b8da4e148be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60aaadd3559ebd803f268717cf02438c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d1481bc01ef913bad902fb8e9fcd347 = $(`<div id="html_2d1481bc01ef913bad902fb8e9fcd347" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo WARMIŃSKO-MAZURSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>3515.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_60aaadd3559ebd803f268717cf02438c.setContent(html_2d1481bc01ef913bad902fb8e9fcd347);
+            
+        
+
+        marker_503f9bcaad4f27ef35f2dd5f52d966a8.bindPopup(popup_60aaadd3559ebd803f268717cf02438c)
+        ;
+
+        
+    
+    
+                marker_503f9bcaad4f27ef35f2dd5f52d966a8.setIcon(icon_caa2cb26b5415513efd18b8da4e148be);
+            
+    
+            var marker_ef46fea128082701e629e77c065278e5 = L.marker(
+                [52.4064, 16.9252],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_10d7ba6aab659f40baa0b53835980742 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a66b8a1ae542775c82f955a53b09c8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f300c3e0323d08a187bb69307bb0630 = $(`<div id="html_8f300c3e0323d08a187bb69307bb0630" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo WIELKOPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4550.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_6a66b8a1ae542775c82f955a53b09c8d.setContent(html_8f300c3e0323d08a187bb69307bb0630);
+            
+        
+
+        marker_ef46fea128082701e629e77c065278e5.bindPopup(popup_6a66b8a1ae542775c82f955a53b09c8d)
+        ;
+
+        
+    
+    
+                marker_ef46fea128082701e629e77c065278e5.setIcon(icon_10d7ba6aab659f40baa0b53835980742);
+            
+    
+            var marker_8d304462221da5c1a835b898c9e2185d = L.marker(
+                [53.4285, 14.5528],
+                {
+}
+            ).addTo(feature_group_a2b8c5c773a2dad45f274b6a1693a11c);
+        
+    
+            var icon_b805ee236fed1255aa7d815b004037ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11dfed0666c91c53ef3b970962211fa8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d784400465c1f945b7e5ab9f67127a07 = $(`<div id="html_d784400465c1f945b7e5ab9f67127a07" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ZACHODNIOPOMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4358.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_11dfed0666c91c53ef3b970962211fa8.setContent(html_d784400465c1f945b7e5ab9f67127a07);
+            
+        
+
+        marker_8d304462221da5c1a835b898c9e2185d.bindPopup(popup_11dfed0666c91c53ef3b970962211fa8)
+        ;
+
+        
+    
+    
+                marker_8d304462221da5c1a835b898c9e2185d.setIcon(icon_b805ee236fed1255aa7d815b004037ed);
+            
+    
+            var feature_group_1099b72873ff521701e39876aa04a5dc = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_8c805d63a271813ee1e6b8c53bc133d7 = L.marker(
+                [51.1079, 17.0385],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_4d91c8b588de3766bfdfab398e325bc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f88e8c0347e60335fb4efcda9d134790 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_045ab85c3041081536cbd0797d3056b1 = $(`<div id="html_045ab85c3041081536cbd0797d3056b1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo DOLNOŚLĄSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>6062.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_f88e8c0347e60335fb4efcda9d134790.setContent(html_045ab85c3041081536cbd0797d3056b1);
+            
+        
+
+        marker_8c805d63a271813ee1e6b8c53bc133d7.bindPopup(popup_f88e8c0347e60335fb4efcda9d134790)
+        ;
+
+        
+    
+    
+                marker_8c805d63a271813ee1e6b8c53bc133d7.setIcon(icon_4d91c8b588de3766bfdfab398e325bc2);
+            
+    
+            var marker_7628e81a2200d69ddbc588f26a45551a = L.marker(
+                [53.1235, 18.0084],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_83dfbe52acd322530ee1d3aa60cafa2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42ef01909e61f105dab620799c5503a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_74a094d5d1c9da39025a8ba070ccdfc2 = $(`<div id="html_74a094d5d1c9da39025a8ba070ccdfc2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo KUJAWSKO-POMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>5117.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_42ef01909e61f105dab620799c5503a6.setContent(html_74a094d5d1c9da39025a8ba070ccdfc2);
+            
+        
+
+        marker_7628e81a2200d69ddbc588f26a45551a.bindPopup(popup_42ef01909e61f105dab620799c5503a6)
+        ;
+
+        
+    
+    
+                marker_7628e81a2200d69ddbc588f26a45551a.setIcon(icon_83dfbe52acd322530ee1d3aa60cafa2c);
+            
+    
+            var marker_4f6bf44a6c799eaf2e53094b5ea09449 = L.marker(
+                [51.2465, 22.5684],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_88bfa08fc0c4ddad6531c8dd4e3bc9cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_435f5bf525b0e79d7f096799eaf7707e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf9bc7004989e9fd59489c4407a19b88 = $(`<div id="html_bf9bc7004989e9fd59489c4407a19b88" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo LUBELSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>5888.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_435f5bf525b0e79d7f096799eaf7707e.setContent(html_bf9bc7004989e9fd59489c4407a19b88);
+            
+        
+
+        marker_4f6bf44a6c799eaf2e53094b5ea09449.bindPopup(popup_435f5bf525b0e79d7f096799eaf7707e)
+        ;
+
+        
+    
+    
+                marker_4f6bf44a6c799eaf2e53094b5ea09449.setIcon(icon_88bfa08fc0c4ddad6531c8dd4e3bc9cd);
+            
+    
+            var marker_2ca9be753e2e62a83b4e99608f2e5d42 = L.marker(
+                [51.9356, 15.5062],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_2c1df4ddaf14d8a3ced461512c6e29bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_caaa3cad44eea27bf4ef383b39242c66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_692b8859cf949375ef9111c202f79d01 = $(`<div id="html_692b8859cf949375ef9111c202f79d01" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo LUBUSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4109.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_caaa3cad44eea27bf4ef383b39242c66.setContent(html_692b8859cf949375ef9111c202f79d01);
+            
+        
+
+        marker_2ca9be753e2e62a83b4e99608f2e5d42.bindPopup(popup_caaa3cad44eea27bf4ef383b39242c66)
+        ;
+
+        
+    
+    
+                marker_2ca9be753e2e62a83b4e99608f2e5d42.setIcon(icon_2c1df4ddaf14d8a3ced461512c6e29bd);
+            
+    
+            var marker_237e9825f7e2eb88ed4e6bd2d13cf7c4 = L.marker(
+                [51.7592, 19.456],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_e035f096d172275677b5c8344eca7e18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_175676ed17faff648494236b4a8665f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ff213b30bed7e120cc820f37ec6fa54 = $(`<div id="html_0ff213b30bed7e120cc820f37ec6fa54" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŁÓDZKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>5595.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_175676ed17faff648494236b4a8665f3.setContent(html_0ff213b30bed7e120cc820f37ec6fa54);
+            
+        
+
+        marker_237e9825f7e2eb88ed4e6bd2d13cf7c4.bindPopup(popup_175676ed17faff648494236b4a8665f3)
+        ;
+
+        
+    
+    
+                marker_237e9825f7e2eb88ed4e6bd2d13cf7c4.setIcon(icon_e035f096d172275677b5c8344eca7e18);
+            
+    
+            var marker_8d046840a95909e40e1f93760e1fb548 = L.marker(
+                [50.0647, 19.945],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_16a53f2c4cfe94ec6880bfd5a7b22365 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b4a42d346013e80ad81b54dcd91320d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0d6f89ec91e88ceadcb85d97c1f869f = $(`<div id="html_d0d6f89ec91e88ceadcb85d97c1f869f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo MAŁOPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>8036.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_3b4a42d346013e80ad81b54dcd91320d.setContent(html_d0d6f89ec91e88ceadcb85d97c1f869f);
+            
+        
+
+        marker_8d046840a95909e40e1f93760e1fb548.bindPopup(popup_3b4a42d346013e80ad81b54dcd91320d)
+        ;
+
+        
+    
+    
+                marker_8d046840a95909e40e1f93760e1fb548.setIcon(icon_16a53f2c4cfe94ec6880bfd5a7b22365);
+            
+    
+            var marker_8a7e3254252bd35a5cd96e1238ff44c5 = L.marker(
+                [52.2297, 21.0122],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_7ef7c1e9dae4150b37528ec4003c91c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ef552d745dfda6f89bbb7f38c40daf2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac6921c826f7cc088c5a8a48b4da7913 = $(`<div id="html_ac6921c826f7cc088c5a8a48b4da7913" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo MAZOWIECKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>8379.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_1ef552d745dfda6f89bbb7f38c40daf2.setContent(html_ac6921c826f7cc088c5a8a48b4da7913);
+            
+        
+
+        marker_8a7e3254252bd35a5cd96e1238ff44c5.bindPopup(popup_1ef552d745dfda6f89bbb7f38c40daf2)
+        ;
+
+        
+    
+    
+                marker_8a7e3254252bd35a5cd96e1238ff44c5.setIcon(icon_7ef7c1e9dae4150b37528ec4003c91c9);
+            
+    
+            var marker_e5a954b461dbfa6b9da2fd4da9cb79cc = L.marker(
+                [50.6711, 17.9253],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_9af9367c061ccccb903d469775dc2321 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dee77c25b9f73890ecb16e05f27a1311 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fec92c1e83da7e35c0efa312ecb59d32 = $(`<div id="html_fec92c1e83da7e35c0efa312ecb59d32" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo OPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4027.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_dee77c25b9f73890ecb16e05f27a1311.setContent(html_fec92c1e83da7e35c0efa312ecb59d32);
+            
+        
+
+        marker_e5a954b461dbfa6b9da2fd4da9cb79cc.bindPopup(popup_dee77c25b9f73890ecb16e05f27a1311)
+        ;
+
+        
+    
+    
+                marker_e5a954b461dbfa6b9da2fd4da9cb79cc.setIcon(icon_9af9367c061ccccb903d469775dc2321);
+            
+    
+            var marker_0d440ba5470bc369e1413d1350901afb = L.marker(
+                [50.0413, 21.999],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_a181a5f7c47ae79fed2a7d7af88b7f2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4af3bfd79e6b67b6affa1ede0fce62b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44be08479c4293f9548665c040dec5b1 = $(`<div id="html_44be08479c4293f9548665c040dec5b1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo PODKARPACKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>5368.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_e4af3bfd79e6b67b6affa1ede0fce62b.setContent(html_44be08479c4293f9548665c040dec5b1);
+            
+        
+
+        marker_0d440ba5470bc369e1413d1350901afb.bindPopup(popup_e4af3bfd79e6b67b6affa1ede0fce62b)
+        ;
+
+        
+    
+    
+                marker_0d440ba5470bc369e1413d1350901afb.setIcon(icon_a181a5f7c47ae79fed2a7d7af88b7f2f);
+            
+    
+            var marker_42ac03c42aed17b8cc8a61b8c005a947 = L.marker(
+                [53.1325, 23.1688],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_666ea995db8c60d02750dfc2edfb1a18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28c9f1bcffd4e64ed42f31eb7fb93c7b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f59500b74e9d4d8692c040b6b68f15b9 = $(`<div id="html_f59500b74e9d4d8692c040b6b68f15b9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo PODLASKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>5688.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_28c9f1bcffd4e64ed42f31eb7fb93c7b.setContent(html_f59500b74e9d4d8692c040b6b68f15b9);
+            
+        
+
+        marker_42ac03c42aed17b8cc8a61b8c005a947.bindPopup(popup_28c9f1bcffd4e64ed42f31eb7fb93c7b)
+        ;
+
+        
+    
+    
+                marker_42ac03c42aed17b8cc8a61b8c005a947.setIcon(icon_666ea995db8c60d02750dfc2edfb1a18);
+            
+    
+            var marker_0197576bd3cbc0dfa69e6de36c5eeccc = L.marker(
+                [54.352, 18.6466],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_8b3aee6e5e6ac3013e31a8879be68141 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_161ef43d08b361bfd67dde5b5157af3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebe915c0e06048421d081c705144cbb2 = $(`<div id="html_ebe915c0e06048421d081c705144cbb2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo POMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>7493.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_161ef43d08b361bfd67dde5b5157af3b.setContent(html_ebe915c0e06048421d081c705144cbb2);
+            
+        
+
+        marker_0197576bd3cbc0dfa69e6de36c5eeccc.bindPopup(popup_161ef43d08b361bfd67dde5b5157af3b)
+        ;
+
+        
+    
+    
+                marker_0197576bd3cbc0dfa69e6de36c5eeccc.setIcon(icon_8b3aee6e5e6ac3013e31a8879be68141);
+            
+    
+            var marker_26691ce78303f0bc3b8b6c183f3c38fc = L.marker(
+                [50.2649, 19.0238],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_cb90dee64ac28c2443350c8dfac57d1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_719a3d6c4c5a2904094bb8a24a6ffd39 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b7f89c1b5bf605e4916ed8d2b774fdb = $(`<div id="html_8b7f89c1b5bf605e4916ed8d2b774fdb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŚLĄSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4473.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_719a3d6c4c5a2904094bb8a24a6ffd39.setContent(html_8b7f89c1b5bf605e4916ed8d2b774fdb);
+            
+        
+
+        marker_26691ce78303f0bc3b8b6c183f3c38fc.bindPopup(popup_719a3d6c4c5a2904094bb8a24a6ffd39)
+        ;
+
+        
+    
+    
+                marker_26691ce78303f0bc3b8b6c183f3c38fc.setIcon(icon_cb90dee64ac28c2443350c8dfac57d1e);
+            
+    
+            var marker_36dfdef274e5692a9899ddf160ec9b38 = L.marker(
+                [50.8661, 20.6286],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_1cad686f060e0399b768b32001a31159 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8b1086ac41819a567c45a090a4ba23a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f46db9e9c5a97ef088416425abd961af = $(`<div id="html_f46db9e9c5a97ef088416425abd961af" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŚWIĘTOKRZYSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>5101.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_d8b1086ac41819a567c45a090a4ba23a.setContent(html_f46db9e9c5a97ef088416425abd961af);
+            
+        
+
+        marker_36dfdef274e5692a9899ddf160ec9b38.bindPopup(popup_d8b1086ac41819a567c45a090a4ba23a)
+        ;
+
+        
+    
+    
+                marker_36dfdef274e5692a9899ddf160ec9b38.setIcon(icon_1cad686f060e0399b768b32001a31159);
+            
+    
+            var marker_efa4f4e5d8bc26b6bc4ac7b6514129b7 = L.marker(
+                [53.7799, 20.4942],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_412bca40ff00a5e007ae5d586df86fb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c19ab17d8c697a271bbfb07aee19220 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0973ef8af125112281718cbe708639b = $(`<div id="html_c0973ef8af125112281718cbe708639b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo WARMIŃSKO-MAZURSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>4790.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_5c19ab17d8c697a271bbfb07aee19220.setContent(html_c0973ef8af125112281718cbe708639b);
+            
+        
+
+        marker_efa4f4e5d8bc26b6bc4ac7b6514129b7.bindPopup(popup_5c19ab17d8c697a271bbfb07aee19220)
+        ;
+
+        
+    
+    
+                marker_efa4f4e5d8bc26b6bc4ac7b6514129b7.setIcon(icon_412bca40ff00a5e007ae5d586df86fb1);
+            
+    
+            var marker_c5be51949e9453739d3100570e7cf06f = L.marker(
+                [52.4064, 16.9252],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_4fe91c640d8d976fbf7ea1bed55f2b3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a807974d3ff58ac3a59185bdb591d99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c9476459478c68e15d59b1abecf307d = $(`<div id="html_9c9476459478c68e15d59b1abecf307d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo WIELKOPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>5354.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_2a807974d3ff58ac3a59185bdb591d99.setContent(html_9c9476459478c68e15d59b1abecf307d);
+            
+        
+
+        marker_c5be51949e9453739d3100570e7cf06f.bindPopup(popup_2a807974d3ff58ac3a59185bdb591d99)
+        ;
+
+        
+    
+    
+                marker_c5be51949e9453739d3100570e7cf06f.setIcon(icon_4fe91c640d8d976fbf7ea1bed55f2b3d);
+            
+    
+            var marker_d0afa0d04c5642093796837a93eb3dd1 = L.marker(
+                [53.4285, 14.5528],
+                {
+}
+            ).addTo(feature_group_1099b72873ff521701e39876aa04a5dc);
+        
+    
+            var icon_48838bd232900657a977a4cba8d00b56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53cf5f9b7333a124ed75cbfe8daeb054 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44556ba0ea509f4ecf960bc829631ee7 = $(`<div id="html_44556ba0ea509f4ecf960bc829631ee7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ZACHODNIOPOMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>5497.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_53cf5f9b7333a124ed75cbfe8daeb054.setContent(html_44556ba0ea509f4ecf960bc829631ee7);
+            
+        
+
+        marker_d0afa0d04c5642093796837a93eb3dd1.bindPopup(popup_53cf5f9b7333a124ed75cbfe8daeb054)
+        ;
+
+        
+    
+    
+                marker_d0afa0d04c5642093796837a93eb3dd1.setIcon(icon_48838bd232900657a977a4cba8d00b56);
+            
+    
+            var feature_group_fa48aa71c404d3562b971916f58d358a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_e9c637e6fbfed799e9faca729dd475ac = L.marker(
+                [51.1079, 17.0385],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_9321225279ce0b845a8670182c3afeb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5230d224d4483dbfb795b6a2fece3ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a8ad489b5251c3b0732477656c2b523b = $(`<div id="html_a8ad489b5251c3b0732477656c2b523b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo DOLNOŚLĄSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>8663.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_b5230d224d4483dbfb795b6a2fece3ee.setContent(html_a8ad489b5251c3b0732477656c2b523b);
+            
+        
+
+        marker_e9c637e6fbfed799e9faca729dd475ac.bindPopup(popup_b5230d224d4483dbfb795b6a2fece3ee)
+        ;
+
+        
+    
+    
+                marker_e9c637e6fbfed799e9faca729dd475ac.setIcon(icon_9321225279ce0b845a8670182c3afeb0);
+            
+    
+            var marker_4b85eef1f91b50c1509f4ba3a9c8e623 = L.marker(
+                [53.1235, 18.0084],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_7af2c0aaa754cd3bd07e246d910c8f9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8c35a03a90c8ec2054f9df877e6ffca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9316b71b60e3ec8f1d939cafd3d9f461 = $(`<div id="html_9316b71b60e3ec8f1d939cafd3d9f461" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo KUJAWSKO-POMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>6740.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_c8c35a03a90c8ec2054f9df877e6ffca.setContent(html_9316b71b60e3ec8f1d939cafd3d9f461);
+            
+        
+
+        marker_4b85eef1f91b50c1509f4ba3a9c8e623.bindPopup(popup_c8c35a03a90c8ec2054f9df877e6ffca)
+        ;
+
+        
+    
+    
+                marker_4b85eef1f91b50c1509f4ba3a9c8e623.setIcon(icon_7af2c0aaa754cd3bd07e246d910c8f9d);
+            
+    
+            var marker_b0c7d4994bfc639416f4bd0252b618bd = L.marker(
+                [51.2465, 22.5684],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_723f482241bd763ef373f295a2168989 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2bdef16ae9bb6683f99950e7f7ebd16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b348ea938a477bd5b4a6e9a3afa3e089 = $(`<div id="html_b348ea938a477bd5b4a6e9a3afa3e089" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo LUBELSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>8205.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_a2bdef16ae9bb6683f99950e7f7ebd16.setContent(html_b348ea938a477bd5b4a6e9a3afa3e089);
+            
+        
+
+        marker_b0c7d4994bfc639416f4bd0252b618bd.bindPopup(popup_a2bdef16ae9bb6683f99950e7f7ebd16)
+        ;
+
+        
+    
+    
+                marker_b0c7d4994bfc639416f4bd0252b618bd.setIcon(icon_723f482241bd763ef373f295a2168989);
+            
+    
+            var marker_3c88b0381469a19d56949fac1daebb0a = L.marker(
+                [51.9356, 15.5062],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_531e0250663249b8bb7155787c41bc1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df03b4e1b129b5585d103abd50dfe3c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5805b7543d356911a1885e8df3edd57e = $(`<div id="html_5805b7543d356911a1885e8df3edd57e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo LUBUSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>6117.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_df03b4e1b129b5585d103abd50dfe3c6.setContent(html_5805b7543d356911a1885e8df3edd57e);
+            
+        
+
+        marker_3c88b0381469a19d56949fac1daebb0a.bindPopup(popup_df03b4e1b129b5585d103abd50dfe3c6)
+        ;
+
+        
+    
+    
+                marker_3c88b0381469a19d56949fac1daebb0a.setIcon(icon_531e0250663249b8bb7155787c41bc1c);
+            
+    
+            var marker_130e61ab8ce3a9b9b2091958bace3718 = L.marker(
+                [51.7592, 19.456],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_c414a8aca51e4de689cbe4498de6bf9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6dfdf76b46a10d4dcc3c012b5b2bbb0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_57d7bb24789ee42358feeb3cb03a99f3 = $(`<div id="html_57d7bb24789ee42358feeb3cb03a99f3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŁÓDZKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>7588.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_b6dfdf76b46a10d4dcc3c012b5b2bbb0.setContent(html_57d7bb24789ee42358feeb3cb03a99f3);
+            
+        
+
+        marker_130e61ab8ce3a9b9b2091958bace3718.bindPopup(popup_b6dfdf76b46a10d4dcc3c012b5b2bbb0)
+        ;
+
+        
+    
+    
+                marker_130e61ab8ce3a9b9b2091958bace3718.setIcon(icon_c414a8aca51e4de689cbe4498de6bf9c);
+            
+    
+            var marker_e27e1934db07a99fc8bffe0669d70f26 = L.marker(
+                [50.0647, 19.945],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_118eb8c216c6ae0f37e1f7d01d53c645 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9118b193d320351e9933a2b5c38268d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_15cda228828c8a397a9652ad554cec4e = $(`<div id="html_15cda228828c8a397a9652ad554cec4e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo MAŁOPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>11822.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_f9118b193d320351e9933a2b5c38268d.setContent(html_15cda228828c8a397a9652ad554cec4e);
+            
+        
+
+        marker_e27e1934db07a99fc8bffe0669d70f26.bindPopup(popup_f9118b193d320351e9933a2b5c38268d)
+        ;
+
+        
+    
+    
+                marker_e27e1934db07a99fc8bffe0669d70f26.setIcon(icon_118eb8c216c6ae0f37e1f7d01d53c645);
+            
+    
+            var marker_6f84ee9063506de5981e1bfd1ea267f4 = L.marker(
+                [52.2297, 21.0122],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_2c4f72b11ea1b38993b40794997eb003 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34f33f590192d602c4f8a5f11e026a1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc378285d18a787debe44bb65254e53d = $(`<div id="html_dc378285d18a787debe44bb65254e53d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo MAZOWIECKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>12228.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_34f33f590192d602c4f8a5f11e026a1b.setContent(html_dc378285d18a787debe44bb65254e53d);
+            
+        
+
+        marker_6f84ee9063506de5981e1bfd1ea267f4.bindPopup(popup_34f33f590192d602c4f8a5f11e026a1b)
+        ;
+
+        
+    
+    
+                marker_6f84ee9063506de5981e1bfd1ea267f4.setIcon(icon_2c4f72b11ea1b38993b40794997eb003);
+            
+    
+            var marker_afa2637b0aa0dbbb54eb865be7ee18b5 = L.marker(
+                [50.6711, 17.9253],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_9d65607a8199c1c5e52e2930bfb04a6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8719ee12fe9e6f21d6890f90c29cbc35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_54bf49e0d1d02ef9cc916989159fdb14 = $(`<div id="html_54bf49e0d1d02ef9cc916989159fdb14" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo OPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>6084.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_8719ee12fe9e6f21d6890f90c29cbc35.setContent(html_54bf49e0d1d02ef9cc916989159fdb14);
+            
+        
+
+        marker_afa2637b0aa0dbbb54eb865be7ee18b5.bindPopup(popup_8719ee12fe9e6f21d6890f90c29cbc35)
+        ;
+
+        
+    
+    
+                marker_afa2637b0aa0dbbb54eb865be7ee18b5.setIcon(icon_9d65607a8199c1c5e52e2930bfb04a6e);
+            
+    
+            var marker_8b96e1ad207213220c175ac6297e422a = L.marker(
+                [50.0413, 21.999],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_5b5665b5e2490be25b99558deb147db7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1362a65bd6deb251ff34c59fdaaea62b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa0bafdc70b4a70afb7bd8ab958ca2eb = $(`<div id="html_fa0bafdc70b4a70afb7bd8ab958ca2eb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo PODKARPACKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>7352.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_1362a65bd6deb251ff34c59fdaaea62b.setContent(html_fa0bafdc70b4a70afb7bd8ab958ca2eb);
+            
+        
+
+        marker_8b96e1ad207213220c175ac6297e422a.bindPopup(popup_1362a65bd6deb251ff34c59fdaaea62b)
+        ;
+
+        
+    
+    
+                marker_8b96e1ad207213220c175ac6297e422a.setIcon(icon_5b5665b5e2490be25b99558deb147db7);
+            
+    
+            var marker_be929c3e879931bcc62afc0c523d33dc = L.marker(
+                [53.1325, 23.1688],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_dc4ad1e4cde644da4c7863cfdc386f74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_829a41bb59cd6708352d6ca184a62378 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0809613803214b0ce6ebb6af7605945c = $(`<div id="html_0809613803214b0ce6ebb6af7605945c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo PODLASKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>8077.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_829a41bb59cd6708352d6ca184a62378.setContent(html_0809613803214b0ce6ebb6af7605945c);
+            
+        
+
+        marker_be929c3e879931bcc62afc0c523d33dc.bindPopup(popup_829a41bb59cd6708352d6ca184a62378)
+        ;
+
+        
+    
+    
+                marker_be929c3e879931bcc62afc0c523d33dc.setIcon(icon_dc4ad1e4cde644da4c7863cfdc386f74);
+            
+    
+            var marker_10c7ad7204782a3939428f1544310366 = L.marker(
+                [54.352, 18.6466],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_1bceef6b4237ced9bcde4d1cc1aeb029 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf7bd51a1a7eec0ab6c653b06d56a17c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6dd13826950a51b08d8a2f31725e815 = $(`<div id="html_d6dd13826950a51b08d8a2f31725e815" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo POMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>9905.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_cf7bd51a1a7eec0ab6c653b06d56a17c.setContent(html_d6dd13826950a51b08d8a2f31725e815);
+            
+        
+
+        marker_10c7ad7204782a3939428f1544310366.bindPopup(popup_cf7bd51a1a7eec0ab6c653b06d56a17c)
+        ;
+
+        
+    
+    
+                marker_10c7ad7204782a3939428f1544310366.setIcon(icon_1bceef6b4237ced9bcde4d1cc1aeb029);
+            
+    
+            var marker_06f30e26138c811cc3ec72094aab3153 = L.marker(
+                [50.2649, 19.0238],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_558a1deb81044bb8c52d35ae29336390 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cf6675edf479e17b37467c2c9995075 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46aff62c17c11c925c1efe29a1cd2cea = $(`<div id="html_46aff62c17c11c925c1efe29a1cd2cea" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŚLĄSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>6745.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_1cf6675edf479e17b37467c2c9995075.setContent(html_46aff62c17c11c925c1efe29a1cd2cea);
+            
+        
+
+        marker_06f30e26138c811cc3ec72094aab3153.bindPopup(popup_1cf6675edf479e17b37467c2c9995075)
+        ;
+
+        
+    
+    
+                marker_06f30e26138c811cc3ec72094aab3153.setIcon(icon_558a1deb81044bb8c52d35ae29336390);
+            
+    
+            var marker_327fdb195cfbe9809039892fb0c2b2be = L.marker(
+                [50.8661, 20.6286],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_58ec1cc3e4aa19348ed97ff15c59e267 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ea3d38ce96fa3f69a8f7550d90c3208 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f490d825cac3de5faabdb31f6b18faf7 = $(`<div id="html_f490d825cac3de5faabdb31f6b18faf7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ŚWIĘTOKRZYSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>7227.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_9ea3d38ce96fa3f69a8f7550d90c3208.setContent(html_f490d825cac3de5faabdb31f6b18faf7);
+            
+        
+
+        marker_327fdb195cfbe9809039892fb0c2b2be.bindPopup(popup_9ea3d38ce96fa3f69a8f7550d90c3208)
+        ;
+
+        
+    
+    
+                marker_327fdb195cfbe9809039892fb0c2b2be.setIcon(icon_58ec1cc3e4aa19348ed97ff15c59e267);
+            
+    
+            var marker_4985335efd5c785ff9081407ca156f32 = L.marker(
+                [53.7799, 20.4942],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_d2f4d533b74899099d8b24670d332cb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_496ae24d236c8ce31266dbee0653f8f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e871ff1d311f3bfd1dceb4ad349a0bdd = $(`<div id="html_e871ff1d311f3bfd1dceb4ad349a0bdd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo WARMIŃSKO-MAZURSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>6425.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_496ae24d236c8ce31266dbee0653f8f2.setContent(html_e871ff1d311f3bfd1dceb4ad349a0bdd);
+            
+        
+
+        marker_4985335efd5c785ff9081407ca156f32.bindPopup(popup_496ae24d236c8ce31266dbee0653f8f2)
+        ;
+
+        
+    
+    
+                marker_4985335efd5c785ff9081407ca156f32.setIcon(icon_d2f4d533b74899099d8b24670d332cb0);
+            
+    
+            var marker_6f3d2a77afad8a5d81fed505412edad6 = L.marker(
+                [52.4064, 16.9252],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_d862e954293378d80041fe86c4412416 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_332aca9f101edad84feeb5ce71c77309 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed9f1f4d3d078482990ffbd74a4cda86 = $(`<div id="html_ed9f1f4d3d078482990ffbd74a4cda86" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo WIELKOPOLSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>7736.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_332aca9f101edad84feeb5ce71c77309.setContent(html_ed9f1f4d3d078482990ffbd74a4cda86);
+            
+        
+
+        marker_6f3d2a77afad8a5d81fed505412edad6.bindPopup(popup_332aca9f101edad84feeb5ce71c77309)
+        ;
+
+        
+    
+    
+                marker_6f3d2a77afad8a5d81fed505412edad6.setIcon(icon_d862e954293378d80041fe86c4412416);
+            
+    
+            var marker_a1f83f3f24da31707d9cd98b8e594aca = L.marker(
+                [53.4285, 14.5528],
+                {
+}
+            ).addTo(feature_group_fa48aa71c404d3562b971916f58d358a);
+        
+    
+            var icon_bc93a6d9663d045a0fab0d7a3bcc3dc6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b595e9bdff24200dfd67532c0c8521bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a613560480fa18bbd80ccc3855225209 = $(`<div id="html_a613560480fa18bbd80ccc3855225209" style="width: 100.0%; height: 100.0%;">         <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 13px; min-width: 150px;">             <h4 style="color: #2c3e50; margin-bottom: 5px; margin-top: 0;"><b>Województwo ZACHODNIOPOMORSKIE</b></h4>             <hr style="margin: 5px 0;">             <p style="margin: 0; font-size: 14px;">Średnia cena: <span style="color: #e74c3c;"><b>7244.0 PLN/m²</b></span></p>         </div></div>`)[0];
+                popup_b595e9bdff24200dfd67532c0c8521bd.setContent(html_a613560480fa18bbd80ccc3855225209);
+            
+        
+
+        marker_a1f83f3f24da31707d9cd98b8e594aca.bindPopup(popup_b595e9bdff24200dfd67532c0c8521bd)
+        ;
+
+        
+    
+    
+                marker_a1f83f3f24da31707d9cd98b8e594aca.setIcon(icon_bc93a6d9663d045a0fab0d7a3bcc3dc6);
+            
+    
+            feature_group_fa48aa71c404d3562b971916f58d358a.addTo(map_93137877a3c40a80838e17c89885c9e3);
+        
+    
+            var layer_control_dc587a8929a4d7a6bbb93b4991deeabe_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_fa8376d89a7c8d3d8ef5841cc25b387a,
+                },
+                overlays :  {
+                    "Ceny w 2012" : feature_group_fa8571c783129a7dbff0b98f9107f871,
+                    "Ceny w 2015" : feature_group_ffc09b071fcb52f1587adbc9c23da160,
+                    "Ceny w 2018" : feature_group_a2b8c5c773a2dad45f274b6a1693a11c,
+                    "Ceny w 2021" : feature_group_1099b72873ff521701e39876aa04a5dc,
+                    "Ceny w 2024" : feature_group_fa48aa71c404d3562b971916f58d358a,
+                },
+            };
+            let layer_control_dc587a8929a4d7a6bbb93b4991deeabe = L.control.layers(
+                layer_control_dc587a8929a4d7a6bbb93b4991deeabe_layers.base_layers,
+                layer_control_dc587a8929a4d7a6bbb93b4991deeabe_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_93137877a3c40a80838e17c89885c9e3);
+
+        
+</script>
+</html>
