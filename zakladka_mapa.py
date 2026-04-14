@@ -91,4 +91,4 @@ class Mapa:
                     popup=gotowy_popup_dynamiki,
                     icon=folium.Icon(color=kolor_znacznika, icon="info-sign")
                 ).add_to(mapa)
-        st_folium(mapa, height=600, use_container_width=True)
+        st_folium(mapa, height=675, use_container_width=True)
