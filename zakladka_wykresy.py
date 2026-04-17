@@ -2,21 +2,11 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import numpy as np
+from dane import pobierz_i_wyczysc_dane
 
 class Wykresy:
     def __init__(self):
-        temp_ceny = pd.read_csv("dane_gus.csv")
-        temp_zarobki = pd.read_csv("zarobki_czyste.csv")
-        temp_inflacja = pd.read_csv("wskazniki_czyste.csv")
-        lata = ["2012", "2015", "2018", "2021", "2024"]
-        for rok in lata:
-            temp_ceny[rok] = temp_ceny[rok].astype(str).str.replace("\xa0", "").replace(" ", "").astype(float)
-        ceny_dlugie = pd.melt(temp_ceny, id_vars=["Wojewodztwo"], value_vars=lata, var_name="Rok", value_name="Cena")
-        zarobki_dlugie = pd.melt(temp_zarobki, id_vars=["Wojewodztwo"], value_vars=lata, var_name="Rok", value_name="Pensja")
-        inflacja_dlugie = pd.melt(temp_inflacja, id_vars=["Wojewodztwo"], value_vars=lata, var_name="Rok", value_name="Inflacja")
-        ceny_zarobki = pd.merge(ceny_dlugie, zarobki_dlugie, on=["Wojewodztwo", "Rok"])
-        self.dane_wykresy = pd.merge(ceny_zarobki, inflacja_dlugie, on=["Wojewodztwo", "Rok"])
-        self.dane_wykresy["Rok"] = self.dane_wykresy["Rok"].astype(int)
+        self.dane_wykresy = pobierz_i_wyczysc_dane()
     def wyswietl_wykresy(self):
         st.header("Wykresy danych")
         wojewodztwa = self.dane_wykresy["Wojewodztwo"].unique()

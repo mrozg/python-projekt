@@ -32,6 +32,7 @@ class Mapa:
                 st.caption("Najniższa cena wynosi: \n" f"({min_wiersz['Wojewodztwo']})")
                 st.subheader(f"{min_wiersz[rok]} PLN/m²")
         st.divider()
+        st.info("Kolor pinezki na mapie cen średnich: zielony - cena poniżej 10 000 PLN/m²; czerwony - cena powyżej 10 000 PLN/m² \n\n" "Dla trybu dynamiki wzrostu cen: zielony - wzrost poniżej 100%; ciemnoczerwony - wzrost powyżej 100%")
         mapa = folium.Map(
             location=[52.06, 19.48], 
             zoom_start=6.2,

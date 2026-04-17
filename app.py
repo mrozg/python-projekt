@@ -1,6 +1,8 @@
 import streamlit as st
 import zakladka_mapa
 import zakladka_wykresy
+import zakladka_kalkulator
+from dane import Dane
 
 st.set_page_config(page_title="Projekt python", layout="wide")
 st.title("Integracja i wizualizacja średnich cen mieszkań na mapie na podstawie danych z GUS")
@@ -15,8 +17,20 @@ elif wybor == "Wykresy":
     modul_wykresy = zakladka_wykresy.Wykresy()
     modul_wykresy.wyswietl_wykresy()
 elif wybor == "Kalkulator":
-    st.info("cuming soon - dodaj kalkulator ")
+    modul_kalkulator = zakladka_kalkulator.Kalkulator()
+    modul_kalkulator.wyswietl_kalkulator()
 elif wybor == "Dane":
-    st.info("cuming soon - dodaj tabelki z mozliwoscia pobrania (wszystkie dane ktore uzywamy)")
+    modul_dane = Dane()
+    modul_dane.pobierz_dane()
 else:
     st.info("chuj wie co tu bedzie, ale na pewno nie to :)")
+
+st.sidebar.divider()
+with st.sidebar:
+    st.sidebar.markdown("""
+    ### O projekcie
+    **Autorzy (L5):** Małgorzata Mróz 184266, David Miśkowicz ,Julia Puchała \n
+    **Kierunek studiów i rok wykonania:** Inżynieria i analiza danych, 2026 \n
+    **Przedmiot:** Wstęp do programowania w języku Python \n
+    Źródła danych: Główny Urząd Statystyczny (GUS)
+    """)
