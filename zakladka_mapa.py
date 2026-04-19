@@ -12,7 +12,7 @@ class Mapa:
         temp_merge = pd.merge(self.tabela_cen, self.tabela_zarobki, on="Wojewodztwo", suffixes=("_cena", "_pensja"))
         self.tabele_polaczone = pd.merge(temp_merge, self.tabela_inflacja, on="Wojewodztwo")
     def wyswietl_mape(self):
-        st.header("Mapa średnich cen za m² w Polsce")
+        st.header("Mapa średnich cen za m² w Polsce oraz ich dynamiki wzrostu")
         rok = st.radio("Wybierz rok:", ["2012", "2015", "2018", "2021", "2024"], horizontal=True)
         tryb_mapy = st.radio("Wybierz tryb mapy:", ["Średnie ceny", "Dynamika wzrostu cen"], horizontal=True)
         srednia = self.tabela_cen[rok].mean()
@@ -21,16 +21,13 @@ class Mapa:
         col1, col2, col3 = st.columns(3)
         with col1:
             with st.container(border=True):
-                st.caption("Średnia cena w Polsce wynosi:")
-                st.subheader(f"{round(srednia, 2)} PLN/m²")
+                st.metric(label="Średnia cena za m² w Polsce wynosi:", value=f"{round(srednia, 2)} PLN/m²", delta=None)
         with col2:
             with st.container(border=True):
-                st.caption("Najwyższa cena wynosi: \n" f"({max_wiersz['Wojewodztwo']})")
-                st.subheader(f"{max_wiersz[rok]} PLN/m²")
+                st.metric(label="Najwyższa cena za m² w Polsce wynosi:", value=f"{round(max_wiersz[rok], 2)} PLN/m²", delta=None)
         with col3:
             with st.container(border=True):
-                st.caption("Najniższa cena wynosi: \n" f"({min_wiersz['Wojewodztwo']})")
-                st.subheader(f"{min_wiersz[rok]} PLN/m²")
+                st.metric(label="Najniższa cena za m² w Polsce wynosi:", value=f"{round(min_wiersz[rok], 2)} PLN/m²", delta=None)
         st.divider()
         st.info("Kolor pinezki na mapie cen średnich: zielony - cena poniżej 10 000 PLN/m²; czerwony - cena powyżej 10 000 PLN/m² \n\n" "Dla trybu dynamiki wzrostu cen: zielony - wzrost poniżej 100%; ciemnoczerwony - wzrost powyżej 100%")
         mapa = folium.Map(
