@@ -2,6 +2,7 @@ import streamlit as st
 import zakladka_mapa
 import zakladka_wykresy
 import zakladka_kalkulator
+import zakladka_porownywarka
 from dane import Dane
 
 st.set_page_config(page_title="Projekt python", layout="wide")
@@ -20,7 +21,8 @@ elif wybor == "Kalkulator":
     modul_kalkulator = zakladka_kalkulator.Kalkulator()
     modul_kalkulator.wyswietl_kalkulator()
 elif wybor == "Porównywarka":
-    st.info("powrownywarke tu wrzucic")
+    modul_porownywarka = zakladka_porownywarka.Porownywarka()
+    modul_porownywarka.wyswietl_porownywarke()
 else:
     modul_dane = Dane()
     modul_dane.pobierz_dane()

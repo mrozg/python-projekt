@@ -24,14 +24,14 @@ class Mapa:
                 st.metric(label="Średnia cena za m² w Polsce wynosi:", value=f"{round(srednia, 2)} PLN/m²", delta=None)
         with col2:
             with st.container(border=True):
-                st.metric(label="Najwyższa cena za m² w Polsce wynosi:", value=f"{round(max_wiersz[rok], 2)} PLN/m²", delta=None)
+                st.metric(label=f"Najwyższa cena za m² w Polsce wynosi ({max_wiersz['Wojewodztwo']}):", value=f"{round(max_wiersz[rok], 2)} PLN/m²", delta=None)
         with col3:
             with st.container(border=True):
-                st.metric(label="Najniższa cena za m² w Polsce wynosi:", value=f"{round(min_wiersz[rok], 2)} PLN/m²", delta=None)
+                st.metric(label=f"Najniższa cena za m² w Polsce wynosi ({min_wiersz['Wojewodztwo']}):", value=f"{round(min_wiersz[rok], 2)} PLN/m²", delta=None)
         st.divider()
         st.info("Kolor pinezki na mapie cen średnich: zielony - cena poniżej 10 000 PLN/m²; czerwony - cena powyżej 10 000 PLN/m² \n\n" "Dla trybu dynamiki wzrostu cen: zielony - wzrost poniżej 100%; ciemnoczerwony - wzrost powyżej 100%")
         mapa = folium.Map(
-            location=[52.06, 19.48], 
+            location=[52.06, 19.48],
             zoom_start=6.2,
             min_lat=48.50,
             max_lat=55.50, 
